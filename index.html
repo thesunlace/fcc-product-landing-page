@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div>
         <header id="header">
-            <img id="header-img" src="https://assets-global.website-files.com/5d761d627a6dfa6a5b28ab12/65e71808ef3d949d6b34bed3_logo.svg" alt="descript logo">
+            <div class="logo">
+                <img id="header-img" src="https://assets-global.website-files.com/5d761d627a6dfa6a5b28ab12/65e71808ef3d949d6b34bed3_logo.svg" alt="descript logo">
+            </div>
             <nav id="nav-bar">
                 <ul class="nav-links">
-                    <li>About</li>
-                    <li>Resources</li>
-                    <li>Pricing</li>
-                    <li>Join</li>
+                    <li><a href="#about"><strong>About</strong></a></li>
+                    <li><a href="#resources"><strong>Resources</strong></a></li>
+                    <li><a href="#pricing"><strong>Pricing</strong></a></li>
+                    <li><a href="#join"><strong>Join</strong></a></li>
                 </ul>
             </nav>
         </header>
@@ -23,19 +26,20 @@
 
     <div id="about">
         <h1>One tool for your workflow</h1>
-        <p>Descript is the only tool you need to write, record, transcribe, edit, collaborate, and share your videos and podcasts.</p>
-    </div>
+        <p class="subheading">Descript is the only tool you need to write, record, transcribe, edit, collaborate, and share your videos and podcasts.</p>
 
-    <div>
-        <iframe 
-        id="video" 
-        src="https://www.youtube.com/embed/Bl9wqNe5J8U?si=SG9tscb9IQ5xNi6k"
-        width="560"
-        height="315"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-        frameborder="0">
-        </iframe>
-    </div>
+        <div>
+            <iframe 
+            id="video" 
+            src="https://www.youtube.com/embed/Bl9wqNe5J8U?si=SG9tscb9IQ5xNi6k"
+            width="800"
+            height="400"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+            frameborder="0">
+            </iframe>
+        
+        </div>
+    </div>    
     
     <div id="resources">
 
@@ -77,12 +81,12 @@
     </div>
 
     <div id="pricing">
-        
+        <h1>Give it a try, we think you'll like it</h1>
 
     </div>
 
-    <div>
-        <h3>Give it a try, we think you'll like it.</h3>
+    <div id="join">
+        <h3>Get started.</h3>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
             <input id="email" type="email" name="email" placeholder="Enter your email address">
             <input id="submit" type="submit" name="submit">

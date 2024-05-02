@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    position: fixed;
+    min-height: 75px;
+    padding: 0px 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+}
+
+#header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    transition: .5s;
+}
+
+#header:hover::before {
+    left: 100%;
+}
+
+.logo {
+    width: 30vw;
+}
+
+nav > ul {
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #0045e5;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 700px;
+}
+
+iframe {
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+.subheading {
+    margin-top: 20px;
+}
+
+#resources {
+    display: grid;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-column-gap: 48px;
+    grid-row-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    max-width: 720px;
+    margin-bottom: 46px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#video-editing, #podcasting, #screen-recording, #transcription, #clip-creation, #publishing {
+    text-align: center;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 30px 20px;
+    display: flex;
+}
+
+h2 {
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.lighter {
+    padding-top: 20px;
+    color: #858585;
+}
