@@ -111,12 +111,17 @@ iframe {
     display: flex;
 }
 
+#video-editing:hover, #podcasting:hover, #screen-recording:hover, #transcription:hover, #clip-creation:hover, #publishing:hover {
+    border: 2px solid #0045e5;
+    cursor: pointer;
+}
+
 h2 {
     padding-top: 10px;
     font-size: 18px;
 }
 
 .lighter {
-    padding-top: 20px;
+    padding-top: 15px;
     color: #858585;
 }
