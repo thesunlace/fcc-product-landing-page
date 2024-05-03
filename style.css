@@ -1,3 +1,7 @@
+:root {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +13,7 @@ body {
 }
 
 header {
+    animation: fade-down .8s .7s backwards;
     position: fixed;
     min-height: 75px;
     padding: 0px 300px;
@@ -88,7 +93,15 @@ iframe {
     margin-top: 20px;
 }
 
+hr {
+    border: 2.5px solid #0045e5;
+    border-radius: 10px;
+    width: 75%;
+    margin: auto;
+}
+
 #resources {
+    margin-top: 50px;
     display: grid;
     flex-direction: row;
     flex-wrap: wrap;
@@ -124,4 +137,86 @@ h2 {
 .lighter {
     padding-top: 15px;
     color: #858585;
+}
+
+#pricing {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #f2f2f2;
+}
+
+.card:hover {
+    border: 2px solid #0045e5;
+    cursor: pointer;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card ul li img {
+    margin-right: 10px;
+    width: 20px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+}
+
+#pricing h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#free h2, h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#creator h2, h3 {
+    text-align: center;
+}
+
+#pro h2, h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
 }
