@@ -1,5 +1,6 @@
 # fcc-product-landing-page
 A Product Landing Page for a project in [freeCodeCamp](https://www.freecodecamp.org/learn).
+Tried to recreate and took inspiration from [Descript's](https://www.descript.com/) official site.
 
 ## Criterias that needed to be met:
 
